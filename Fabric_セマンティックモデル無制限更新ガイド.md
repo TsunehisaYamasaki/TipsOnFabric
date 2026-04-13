@@ -85,7 +85,7 @@ $result | ConvertFrom-Json | Select-Object -ExpandProperty value |
 
 ---
 
-## 方法 2: XMLA エンドポイント + PowerShell (正常動作しなければ方法 1 もしくは 2 をお試しください。)
+## 方法 2: XMLA エンドポイント + PowerShell
 
 XMLA エンドポイントを使うと TMSL（Tabular Model Scripting Language）で直接更新コマンドを送信できます。
 
@@ -122,6 +122,7 @@ $tmslCommand = @"
 # 実行（Azure AD 認証が自動的に行われます）
 # -ConnectionTimeout: 接続タイムアウト（秒）、デフォルト 60 秒
 # -QueryTimeout: クエリ実行タイムアウト（秒）、デフォルト無制限（0）
+# 正常動作しなければ方法 1 もしくは 2 をお試しください
 Invoke-ASCmd -Server $xmlaEndpoint -Query $tmslCommand -ConnectionTimeout 120 -QueryTimeout 180
 Write-Host "XMLA エンドポイント経由で更新を実行しました"
 ```
@@ -138,7 +139,7 @@ Write-Host "XMLA エンドポイント経由で更新を実行しました"
 2. 認証で自分のアカウントでサインイン
 3. 新しいクエリウィンドウで上記の TMSL コマンドを実行
 
-> **注意**: SSMS で Analysis Services がグレーアウトしている場合は、[Analysis Services クライアントライブラリ（MSOLAP）](https://learn.microsoft.com/en-us/analysis-services/client-libraries) を別途インストールし、SSMS を再起動してください。
+> **注意**: SSMS で Analysis Services がグレーアウトしている場合は、[Analysis Services クライアントライブラリ（MSOLAP）](https://learn.microsoft.com/en-us/analysis-services/client-libraries) を別途インストールし、SSMS を再起動してください。正常動作しなければ方法 1 もしくは 2 をお試しください。
 
 ---
 
