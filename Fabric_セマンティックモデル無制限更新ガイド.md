@@ -85,7 +85,7 @@ $result | ConvertFrom-Json | Select-Object -ExpandProperty value |
 
 ---
 
-## 方法 2: XMLA エンドポイント + PowerShell
+## 方法 2: XMLA エンドポイント + PowerShell (正常動作しなければ方法 1 もしくは 2 をお試しください。)
 
 XMLA エンドポイントを使うと TMSL（Tabular Model Scripting Language）で直接更新コマンドを送信できます。
 
