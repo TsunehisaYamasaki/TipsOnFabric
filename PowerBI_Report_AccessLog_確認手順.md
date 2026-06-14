@@ -6,9 +6,9 @@ Activity Log は Power BI / Fabric 管理者向けの監査ログです。特定
 
 ## 参考情報
 
-- [Access the Power BI activity log - Power BI](https://learn.microsoft.com/en-us/power-bi/guidance/admin-activity-log)
-- [Operation list - Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/admin/operation-list)
-- [Admin - Get Activity Events](https://learn.microsoft.com/en-us/rest/api/power-bi/admin/get-activity-events)
+- [Access the Power BI activity log - Power BI](https://learn.microsoft.com/ja-jp/power-bi/guidance/admin-activity-log)
+- [Operation list - Microsoft Fabric](https://learn.microsoft.com/ja-jp/fabric/admin/operation-list)
+- [Admin - Get Activity Events](https://learn.microsoft.com/ja-jp/rest/api/power-bi/admin/get-activity-events)
 
 ## 前提条件
 
